@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "56291b27-f60a-4159-a18b-b3d00447b868",
+		"name": "Prueba ML",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mutant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uthtxmq9e9.execute-api.us-east-2.amazonaws.com/PruebaTecnica/mutant",
+					"protocol": "https",
+					"host": [
+						"uthtxmq9e9",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"PruebaTecnica",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://uthtxmq9e9.execute-api.us-east-2.amazonaws.com/PruebaTecnica/stats",
+					"protocol": "https",
+					"host": [
+						"uthtxmq9e9",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"PruebaTecnica",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
